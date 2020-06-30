@@ -4,7 +4,6 @@ $(document).ready(function() {
     $("#answer").hide();
     // define the method
 	magic8Ball.askQuestion = function(question) {
-        $("#answer").hide();
         $("#answer").fadeIn(4000);
 		 // create a random number
 		 var randomNumber = Math.random();
@@ -21,6 +20,7 @@ $(document).ready(function() {
 		 console.log(answer);
 	};
     var onClick = function() {
+        $("#answer").hide();
         var question = prompt("ASK A YES/NO QUESTION!");
         magic8Ball.askQuestion(question);
         };
