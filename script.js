@@ -5,6 +5,7 @@ $(document).ready(function() {
     // define the method
 	magic8Ball.askQuestion = function(question) {
         $("#answer").hide();
+        $("#answer").fadeIn(4000);
 		 // create a random number
 		 var randomNumber = Math.random();
 		 // make the random number between 0 and the number of items in your array
