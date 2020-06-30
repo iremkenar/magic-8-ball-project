@@ -10,7 +10,10 @@ $(document).ready(function() {
 		 // round down the number to be a whole number
 		 var randomIndex = Math.floor(randomNumberForListOfAnswers);
 		 // use that number to index a random number from the answers array
-		 var answer = 		this.listOfAnswers[randomIndex];
+         var answer = this.listOfAnswers[randomIndex];
+         
+         $("#answer").text( answer );
+
 		 console.log(question);
 		 console.log(answer);
 	};
@@ -18,6 +21,7 @@ $(document).ready(function() {
         var question = prompt("ASK A YES/NO QUESTION!");
         magic8Ball.askQuestion(question);
         };
-    $("#questionButton").click( onClick );
+
+        $("#questionButton").click( onClick );
  });
 
